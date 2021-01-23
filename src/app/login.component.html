@@ -1,0 +1,33 @@
+<form [formGroup]="form">
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input  id="username" 
+                type="text" 
+                class="form-control"
+                formControlName="username" >
+        <div *ngIf='form.controls.username.touched && !form.controls.username.valid' class="alert alert-danger">
+            Username is required.
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input  id="username" 
+                type="text" 
+                class="form-control" 
+                formControlName='password'>
+        <div *ngIf='form.controls.password.touched && !form.controls.password.valid' class="alert alert-danger">
+            Password is required.
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="value3">3rd Value</label>
+        <input  id="username" 
+                type="text" 
+                class="form-control" 
+                formControlName='value3'>
+        <div *ngIf='form.controls.value3.touched && !form.controls.value3.valid' class="alert alert-danger">
+            3rd Value is required.
+        </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Login</button>
+</form>
