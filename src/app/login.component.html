@@ -5,7 +5,7 @@
                 type="text" 
                 class="form-control"
                 formControlName="username" >
-        <div *ngIf='form.controls.username.touched && !form.controls.username.valid' class="alert alert-danger">
+        <div *ngIf= "form.controls.username.touched && !form.controls.username.valid" class="alert alert-danger">
             Username is required.
         </div>
     </div>

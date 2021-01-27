@@ -31,7 +31,8 @@ export class LoginComponent {
         // else {
         //     this.form.controls['password'].setErrors({invalidLogin: null})
         // }
-
+        
+        
         console.log(this.form.value)
     }
 }
